@@ -5,21 +5,21 @@
 class Reliquary < Formula
   desc "Your digital asset guardian."
   homepage "https://github.com/SentimentalK/Reliquary"
-  version "0.6.0"
+  version "0.6.1"
   license "Private"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/SentimentalK/Reliquary/releases/download/v0.6.0/reliquary_Darwin_x86_64.tar.gz"
-    sha256 "df7fe66bbb8c7201601ca124747c62ac803e60a6c8a87081538b45360fab6233"
+    url "https://github.com/SentimentalK/Reliquary/releases/download/v0.6.1/reliquary_Darwin_x86_64.tar.gz"
+    sha256 "6966d891d86fa941e7811c268f0ba12c3f764afc99840d613e00ed9c06f8ef43"
 
     def install
       bin.install "reliquary"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/SentimentalK/Reliquary/releases/download/v0.6.0/reliquary_Darwin_arm64.tar.gz"
-    sha256 "f2c926d74ff8d8d42c7d0f5306432ce2e090ae26fd0f823140eb3ca5ace0acf1"
+    url "https://github.com/SentimentalK/Reliquary/releases/download/v0.6.1/reliquary_Darwin_arm64.tar.gz"
+    sha256 "5129c4b4e1803a97a1409fcc2fd457e624c340978a0a6a1f867e130576d43f18"
 
     def install
       bin.install "reliquary"
