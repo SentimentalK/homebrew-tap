@@ -11,17 +11,17 @@ class Reliquary < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/SentimentalK/Reliquary/releases/download/v1.0.0/reliquary_Darwin_x86_64.tar.gz"
-    sha256 "f7a17ff66e386a57e8d4188578f76f89f0bb4811a4e426068960a8c543c7fd69"
+    sha256 "4ce48c230370681fa6a6f82d754a9d93bb8dbed285f8714592542a164df6a41d"
 
-    def install
+    define_method(:install) do
       bin.install "reliquary"
     end
   end
   if Hardware::CPU.arm?
     url "https://github.com/SentimentalK/Reliquary/releases/download/v1.0.0/reliquary_Darwin_arm64.tar.gz"
-    sha256 "38a93c26147a9d080f86219cb3382eb39fb16aa7d3ba4f68b3ca01476d237587"
+    sha256 "50ba3a1bc354f4f494849288a650d07a30d978fd6856cb99721de16bf1434d1d"
 
-    def install
+    define_method(:install) do
       bin.install "reliquary"
     end
   end
